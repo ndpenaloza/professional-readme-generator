@@ -1,3 +1,7 @@
+const inquirer = require('inquirer');
+const fs = require('fs');
+const util = require('util');
+
 const readmeQuest = [
     { 
         type: "input",
@@ -30,15 +34,20 @@ const readmeQuest = [
         name: "test"
     },
     {  
-        type: "",
-        message: "",
-        name: ""
+        type: "list",
+        message: "What license would you like to use?",
+        choice: ["MIT", "Apache 2.0", "GNU - General Public License", "Mozilla Public Licence 2.0"],
+        name: "license"
     },
     {  
-        type: "",
-        message: "",
-        name: ""
+        type: "input",
+        message: "What is your GitHub username?",
+        name: "github"
     },
-
+    {  
+        type: "input",
+        message: "What is your email address?",
+        name: "email"
+    }
 
 ]
