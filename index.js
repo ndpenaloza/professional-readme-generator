@@ -26,7 +26,7 @@ const readmeQuest = [
     {  
         type: "input",
         message: "Please write in contribution guidlines:",
-        name: "contributors"
+        name: "contributing"
     },
     {  
         type: "input",
