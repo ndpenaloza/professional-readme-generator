@@ -2,10 +2,10 @@ const inquirer = require('inquirer');
 const fs = require('fs');
 const util = require('util');
 
-const writeNewDocAsync = util.promisify(fs.writeFile);
+const writeFileAsync = util.promisify(fs.writeFile);
 
 const readmeQuestPrompts = () =>
-    inquirer.prompt = ([
+    inquirer.prompt([
         { 
             type: "input",
             message: "What is the title of your project?",
@@ -39,7 +39,7 @@ const readmeQuestPrompts = () =>
         {  
             type: "list",
             message: "What license would you like to use?",
-            choice: ["MIT", "Apache 2.0", "GNU - General Public License", "Mozilla Public Licence 2.0"],
+            choices: ["MIT", "Apache 2.0", "Mozilla Public Licence 2.0", "Unlicensed"],
             name: "license"
         },
         {  
@@ -52,10 +52,30 @@ const readmeQuestPrompts = () =>
             message: "What is your email address?",
             name: "email"
         }
-
     ]);
 
+const licenseOptions = {
+    "MIT": {
+        name: "MIT",
+        url: "https://opensource.org/licenses/MIT"
+    },
+    "Apache 2.0": {
+        name: "Apache 2.0",
+        url: "https://www.apache.org/licenses/LICENSE-2.0"
+    },
+    "Mozilla Public License 2.0": {
+        name: "Mozilla Public License 2.0",
+        url: "https://www.mozilla.org/en-US/MPL/2.0/"
+    },
+    "Unlicensed": {
+        name: "Unlicensed",
+        url:"#"
+    }
+}
+
+// function to create markdown
 const generateMarkDown = (response) =>
+// Template literal
 `# ${response.projectTitle}
 
 [Description](#Description)
@@ -64,15 +84,13 @@ const generateMarkDown = (response) =>
 [Contributing](#Contributing)
 [Tests](#Tests)
 [License](#License)
-[GitHub Username](#GitHub-Username)
-[Email Address](#Email-Address)
-
+[Questions](#Questions)
 
 ## Description: 
 ${response.description}
 
 ## Installation:
-${response.nstallation}
+${response.installation}
 
 ## Usage:
 ${response.usage}
@@ -84,11 +102,17 @@ ${response.contributing}
 ${response.test}
 
 ## License:
-${responselicense}
+${licenseOptions[response.license].name}
+[${licenseOptions[response.license].url}](${licenseOptions[response.license].url})
 
-## GitHub Username:
+## Questions:
+### GitHub Username:
 ${response.github}
-
-## Email Address:
+### Email Address:
 ${response.email}
-`
+`;
+
+readmeQuestPrompts()
+    .then((response) => writeFileAsync("README.md", generateMarkDown(response)))
+    .then(() => console.log("Success!"))
+    .catch(console.error);
