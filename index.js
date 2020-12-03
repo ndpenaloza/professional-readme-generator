@@ -78,13 +78,14 @@ const generateMarkDown = (response) =>
 // Template literal
 `# ${response.projectTitle}
 
-[Description](#Description)
-[Installation](#Installation)
-[Usage](#Usage)
-[Contributing](#Contributing)
-[Tests](#Tests)
-[License](#License)
-[Questions](#Questions)
+## Table of Contents
+  1.  [Description](#Description)
+  2.  [Installation](#Installation)
+  3.  [Usage](#Usage)
+  4.  [Contributing](#Contributing)
+  5.  [Tests](#Tests)
+  6.  [License](#License)
+  7.  [Questions](#Questions)
 
 ## Description: 
 ${response.description}
