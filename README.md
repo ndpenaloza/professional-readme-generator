@@ -1,15 +1,16 @@
-# stuff
+# Professional-README-Generator
 
-[Description](#Description)
-[Installation](#Installation)
-[Usage](#Usage)
-[Contributing](#Contributing)
-[Tests](#Tests)
-[License](#License)
-[Questions](#Questions)
+## Table of Contents
+  1.  [Description](#Description)
+  2.  [Installation](#Installation)
+  3.  [Usage](#Usage)
+  4.  [Contributing](#Contributing)
+  5.  [Tests](#Tests)
+  6.  [License](#License)
+  7.  [Questions](#Questions)
 
 ## Description: 
-stuff
+Utilizing Node.js, this project creates a professional README document from taking user input through the command line to a template. 
 
 ## Installation:
 stuff
@@ -27,8 +28,8 @@ stuff
 MIT
 [https://opensource.org/licenses/MIT](https://opensource.org/licenses/MIT)
 
+[readmeExample.md](./assets/readmeExample.md)
+
 ## Questions:
 ### GitHub Username:
-stuff
-### Email Address:
-stuff
+ndpenaloza
