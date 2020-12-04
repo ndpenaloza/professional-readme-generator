@@ -114,6 +114,6 @@ ${response.email}
 `;
 
 readmeQuestPrompts()
-    .then((response) => writeFileAsync("README.md", generateMarkDown(response)))
+    .then((response) => writeFileAsync("readmeExample.md", generateMarkDown(response)))
     .then(() => console.log("Success!"))
     .catch(console.error);
