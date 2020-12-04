@@ -78,6 +78,8 @@ const generateMarkDown = (response) =>
 // Template literal
 `# ${response.projectTitle}
 
+![${licenseOptions[response.license].name}](https://img.shields.io/badge/license-${response.license.replace(/-/g, "%20")})
+
 ## Table of Contents
   1.  [Description](#Description)
   2.  [Installation](#Installation)
