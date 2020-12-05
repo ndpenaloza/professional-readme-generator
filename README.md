@@ -30,7 +30,7 @@ To contribute, send message on what you would like to change, clone repository, 
 
 ## Walkthrough Video / README sample
 
-  1.  [Walkthrough Video](./assets/<iframe src="https://drive.google.com/file/d/1z6CqwiSgYFjbHmNoYAg17yJOH3W8qsoF/preview" width="640" height="480"></iframe>)
+  1.  [Walkthrough Video](<iframe src="https://drive.google.com/file/d/1z6CqwiSgYFjbHmNoYAg17yJOH3W8qsoF/preview" width="640" height="480"></iframe>)
   2.  [readmeExample.md](./readmeExample.md)
 
 ## License:
