@@ -28,7 +28,7 @@ stuff
 
 ## Walkthrough Video / README sample
 
-[readmeExample.md](./assets/readmeExample.md)
+[readmeExample.md](./readmeExample.md)
 
 ## License:
 
