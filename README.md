@@ -6,25 +6,27 @@
   2.  [Installation](#Installation)
   3.  [Usage](#Usage)
   4.  [Contributing](#Contributing)
-  5.  [Tests](#Tests)
-  6.  [License](#License)
-  7.  [Walkthrough Video / README sample](#Walkthrough)
+  5.  [License](#License)
+  6.  [Walkthrough Video / README sample](#Walkthrough)
   7.  [Questions](#Questions)
 
 ## Description: 
 Utilizing Node.js, this project creates a professional README document from taking user input through the command line to a template. 
 
 ## Installation:
-stuff
+Install Node.js on your machine, clone repository, and on command line enter:
+```
+npm i
+```
 
 ## Usage:
-stuff
+To begin entering input to prompts to generate markdown file, enter:
+```
+node index.js
+```
 
 ## Contributing:
-stuff
-
-## Tests:
-stuff
+To contribute, send message on what you would like to change, clone repository, make commits with detailed descriptions, and submit pull requests.
 
 ## Walkthrough Video / README sample
 
