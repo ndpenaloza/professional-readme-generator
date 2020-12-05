@@ -13,6 +13,8 @@
 ## Description: 
 Utilizing Node.js, this project creates a professional README document from taking user input through the command line to a template. 
 
+![Screenshot of readme](./assets/readme.png)
+
 ## Installation:
 Install Node.js on your machine, clone repository, and on command line enter:
 ```
@@ -30,7 +32,7 @@ To contribute, send message on what you would like to change, clone repository, 
 
 ## Walkthrough Video / README sample
 
-  1.  [Walkthrough Video](<iframe src="https://drive.google.com/file/d/1z6CqwiSgYFjbHmNoYAg17yJOH3W8qsoF/preview" width="640" height="480"></iframe>)
+  1.  [Walkthrough Video](./assets/walkthrough.webm)
   2.  [readmeExample.md](./readmeExample.md)
 
 ## License:
