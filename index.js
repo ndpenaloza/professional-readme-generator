@@ -4,6 +4,7 @@ const util = require('util');
 
 const writeFileAsync = util.promisify(fs.writeFile);
 
+// Questions prompts that user will answer to generate readme
 const readmeQuestPrompts = () =>
     inquirer.prompt([
         { 
@@ -53,7 +54,8 @@ const readmeQuestPrompts = () =>
             name: "email"
         }
     ]);
-
+    
+// Licensing options name and links
 const licenseOptions = {
     "MIT": {
         name: "MIT",
@@ -73,7 +75,7 @@ const licenseOptions = {
     }
 }
 
-// function to create markdown
+// Function to create markdown
 const generateMarkDown = (response) =>
 // Template literal
 `# ${response.projectTitle}
